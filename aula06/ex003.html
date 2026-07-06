@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIHIHA</title>
+    <style>
+        body {
+            background-color: rgb(26, 134, 98);  /* Para comentar no css */
+            color: chocolate;
+            font: normal 16pt Arial;
+        }
+        h1 {
+            color: rgb(140, 194, 85);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1> Olá, Mundo!! </h1> <!-- para comentar no HMTL !-->
+    <p> Ohhh Yeahh </p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))  // tem o parseInt para transformar em inteiro ou parseFloat para Flutuavel 
+        var n2 = Number(window.prompt('Digite outro número: ')) // o Number vai fazer o próprio JS indentificar se é Int ou Float
+        var s = n1 + n2
+        window.alert(`A soma de ${n1} e ${n2} é igual a ${s}`) 
+        // (number + number) para adição ou (string + string) para concatenização/juntar 
+        // Preciso transformar as variaveis em numeros Inteiros ou Float para funcionar, somente com o window.prompt elas são consideradas string
+        // Para converter Number para String tem os 2 comandos : (x).toString() ou String(x)
+        // Para adicionar a váriavel pode ser por '+ x' ou pelo ${}, para o segundo metodo OBRIGATÓRIO o uso de Crase [`]
+    </script>
+</body>
+</html>

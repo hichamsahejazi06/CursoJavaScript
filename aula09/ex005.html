@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendo o DOM</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            color: black;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1> Primera vez vendo o DOM </h1>
+    <P> Toma o resultado </P>
+    <p> Aprendendo a usar o <strong>DOM</strong></p>
+    <div id="msg"> Clique Aqui!! </div>
+     <!-- <div name="msg"> Clique Aqui!! </div> -->
+     <!-- <div class="msg"> Clique Aqui!! </div> -->
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        // var d = window.document.getElementById('msg')
+        var d = window.document.querySelector('div#msg')  // No querySelector o '#' é para ser o div é 'id' e o '.' se ele é class 
+        corpo.style.background = 'white'
+        window.document.write(' Está escrito: ' + p1.innerText)
+        p1.style.color = 'blue'
+        d.style.background = 'yellow'
+        d.innerText = 'ROSXTOSIEEU'
+        /*
+        window.document.getElementsByName('msg').innerHTML = 'OHH Yeah'  so pra mostrar que tem o name
+        window.document.getElementsByClassName('msg').innerText = 'OHH Yeah'   e que tem o class
+        window.document.getElementById('msg').innerText = 'HIHIHA' Só pra mostrar que da pra fazer direto, porem fica mais "poluido"
+        window.alert(p1.innerText) Deixei os 2 assim pq se não ficam "bugando" o live server
+        window.alert(p1.innerHTML)
+        */
+    </script>
+</body>
+</html>

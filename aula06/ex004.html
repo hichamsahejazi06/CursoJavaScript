@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual seu nome? ')
+        document.write(`Seu nome é <strong>${nome}</strong> e tem ${nome.length} letras <br/>`) // O Strong faz ficar em negrito e o br é para pular linha
+        document.write(`Você gritando seu nome ficaria assim ${nome.toUpperCase()}<br/>`) // o document.write é para aparecer na página as palavras
+        document.write(`Seu nome sussurado fica assim: ${nome.toLowerCase()}`)
+
+        // no Node da pra limitar o numero de numéros dps do 0 com o comando , x.toFixed(y) , o x é a variavel e o y é o nmr a qual vc quer limitar
+        // também da pra trocar se vai ser ',' ou '.' dps do numero inteiro
+        // para colocar em moeda local da pra usar o comando x.toLocaleString('pt-BR' , {style: 'currency', currency:'BRL'} , da pra colocar a moeda de qualquer país
+    </script>
+</body>
+</html>
+
